@@ -1,0 +1,170 @@
+/* Global Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: hsl(257, 40%, 49%);
+  color: #fff;
+  overflow: hidden;
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+
+/* Main Styles */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  display: flex;
+  margin-top: 200px;
+  justify-content: center;
+}
+
+header {
+  margin-top: 50px;
+}
+
+.logo {
+  position: absolute;
+  top: 50px;
+}
+
+.images {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.mockups {
+  padding-right: 50px;
+}
+
+.register-area {
+  padding-top: 150px;
+}
+
+.register-area-wrapper h1 {
+  font-size: 2em;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.register-area-wrapper p {
+  width: 500px;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 33%;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  color: hsl(257, 40%, 49%);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  background: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+.footer {
+  position: absolute;
+  top: 900px;
+  right: 50px;
+}
+
+.social-media-icons a {
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  text-align: center;
+  margin-left: 10px;
+  padding: 5px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.social-media-icons a > i {
+  width: 25px;
+}
+
+.social-media-icons a:hover {
+  border-color: hsl(300, 69%, 71%);
+  color: hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width: 1260px) {
+  .mockups {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    background-image: url(./images/bg-mobile.svg);
+    overflow-y: auto;
+  }
+  .container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    margin: 0 -200px;
+  }
+  .logo img {
+    width: 70%;
+  }
+  .images {
+    margin-top: -50px;
+    text-align: center;
+  }
+  .mockups {
+    padding: 0;
+    width: 400px;
+  }
+  .register-area {
+    padding-top: 50px;
+    display: flex;
+  }
+
+  .register-area-wrapper {
+    text-align: center;
+  }
+
+  .register-area-wrapper h1 {
+    font-size: 1.5em;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .register-area-wrapper p {
+    width: 330px;
+  }
+  .btn {
+    width: 70%;
+  }
+  .footer {
+    position: unset;
+    margin-top: 50px;
+  }
+}
